@@ -128,12 +128,18 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="framework.h" />
+    <ClInclude Include="Order.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="StockQuest.h" />
     <ClInclude Include="targetver.h" />
+    <ClInclude Include="User.h" />
+    <ClInclude Include="Trade.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Order.cpp" />
     <ClCompile Include="StockQuest.cpp" />
+    <ClCompile Include="User.cpp" />
+    <ClCompile Include="Trade.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="StockQuest.rc" />
