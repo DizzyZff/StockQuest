@@ -127,8 +127,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="APIkey.h" />
     <ClInclude Include="framework.h" />
+    <ClInclude Include="MarketDataAPI.h" />
     <ClInclude Include="Order.h" />
+    <ClInclude Include="Portfolio.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="StockQuest.h" />
     <ClInclude Include="targetver.h" />
@@ -136,7 +139,11 @@
     <ClInclude Include="Trade.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="MarketDataAPI.cpp">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Python310\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
     <ClCompile Include="Order.cpp" />
+    <ClCompile Include="Portfolio.cpp" />
     <ClCompile Include="StockQuest.cpp" />
     <ClCompile Include="User.cpp" />
     <ClCompile Include="Trade.cpp" />
@@ -147,6 +154,9 @@
   <ItemGroup>
     <Image Include="small.ico" />
     <Image Include="StockQuest.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
